@@ -7,21 +7,92 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: black;
   background-image: url("./img/hixs-evolution.png");
 }
+#logoBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  transition: width 1.5s;
+}
 .logo{
   border-radius: 50%;
   width: 50vmin;
-  height: 50vmin;
-  -webkit-filter: drop-shadow(0 0 20vmin silver);
-  filter: drop-shadow(0 0 20vmin silver);
+  height: auto;
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .text{
   width: 50vmin;
   height: auto;
-  -webkit-filter: drop-shadow(0 0 20vmin silver);
-  filter: drop-shadow(0 0 20vmin silver);
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.top{
+  width:25vmin;
+}
+@keyframes pulse{
+  from{
+    -webkit-filter: drop-shadow(0 0 50px silver);
+    filter: drop-shadow(0 0 50px silver);
+  }
+
+  to{
+    -webkit-filter: drop-shadow(0 0 50px white);
+    filter: drop-shadow(0 0 50px white);
+  }
+}
+#projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40vmin;
+}
+
+.project{
+  height: auto;
+  text-align: center;
+  background-color: silver;
+  border-radius: 10px;
+}
+.project img{
+  width: 40vmin;
+  border-radius: 10px 10px 0 0;
+}
+.projectFooter{
+  border-radius: 0 0 10px 10px;
+  background-color: slategray;
+
+}
+a, a:visited, a:active, a:hover{
+  text-decoration: none;
+  color: black;
+}
+.leftShift{
+  opacity: 0.4;
+  transform: perspective(800px) rotateY(-60deg) scale(0.8);
+}
+.rightShift{
+  opacity: 0.4;
+  transform: perspective(800px) rotateY(60deg) scale(0.8);
+}
+.rightShift:hover,.leftShift:hover{
+  opacity: 0.7;
+}
+.hidden{
+  display: none !important;
+}
+.projLink{
+  transition: all 1s;
 }
