@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url("./img/hixs-evolution.png");
+}
+.logo{
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+  -webkit-filter: drop-shadow(0 0 20vmin silver);
+  filter: drop-shadow(0 0 20vmin silver);
+}
+.text{
+  width: 50vmin;
+  height: auto;
+  -webkit-filter: drop-shadow(0 0 20vmin silver);
+  filter: drop-shadow(0 0 20vmin silver);
+}
