@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Statement | SeraphDev</title>
+  <meta name="description" content="SeraphDev's accessibility statement. We build to WCAG 2.1 AA and treat accessibility as a starting point, not a checkbox — including on our own website." />
+  <link rel="canonical" href="https://www.seraphdev.com/accessibility/" />
+  <link rel="icon" href="/SeraphDevLogo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SeraphDev" />
+  <meta property="og:title" content="Accessibility Statement | SeraphDev" />
+  <meta property="og:description" content="We build to WCAG 2.1 AA and treat accessibility as a starting point, not a checkbox." />
+  <meta property="og:url" content="https://www.seraphdev.com/accessibility/" />
+  <meta property="og:image" content="https://www.seraphdev.com/SeraphDevLogo.png" />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/"><img src="/SeraphDevLogo.png" alt="" width="34" height="34" /><span>SERAPHDEV</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="/#approach">Approach</a>
+        <a href="/#services">Services</a>
+        <a href="/#work">Work</a>
+        <a href="/faq/">FAQ</a>
+        <a class="btn btn-primary" href="https://calendly.com/wesley-seraphdev/30min" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="/">Home</a> / Accessibility</p>
+        <h1>Accessibility statement</h1>
+        <p class="lead measure" style="margin-left:0">Accessibility isn't a compliance checkbox for us — it's where we started. That has to include our own website.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap prose">
+        <h2>Our commitment</h2>
+        <p>SeraphDev builds assistive and accessible technology for a living, including software designed with and for neurodivergent users. We hold our own site to the same standard we bring to client work.</p>
+
+        <h2>Conformance target</h2>
+        <p>This website is built to conform to the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</strong>. In practice, that means we design and test for:</p>
+        <ul>
+          <li>Sufficient color contrast for text and interactive elements</li>
+          <li>Full keyboard operability, with visible focus indicators on every interactive element</li>
+          <li>A logical heading structure and landmark regions for screen-reader navigation</li>
+          <li>A "skip to content" link and consistent, labeled navigation</li>
+          <li>Meaningful text alternatives for images, and decorative images marked as such</li>
+          <li>Respect for the <code>prefers-reduced-motion</code> setting, so animation never gets in the way</li>
+          <li>Content that reflows and remains usable on small screens and at high zoom</li>
+        </ul>
+
+        <h2>Ongoing work</h2>
+        <p>Accessibility is a practice, not a one-time audit. We test with keyboard-only navigation and screen readers, and we treat any barrier a visitor hits as a bug to fix — not an edge case to defer.</p>
+
+        <h2>Found a barrier? Tell us.</h2>
+        <p>If any part of this site is difficult to use with assistive technology, we want to know so we can fix it. <a href="https://calendly.com/wesley-seraphdev/30min" target="_blank" rel="noopener">Book a short call</a> and tell us the page and what got in your way, and we'll respond promptly.</p>
+
+        <div class="note" style="margin-top:2rem">
+          This statement reflects the current state of <a href="https://www.seraphdev.com/">seraphdev.com</a> and is reviewed as the site changes.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <a class="brand" href="/"><img src="/SeraphDevLogo.png" alt="" width="32" height="32" /><span>SERAPHDEV</span></a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/#approach">Approach</a>
+          <a href="/#services">Services</a>
+          <a href="/#work">Work</a>
+          <a href="/case-studies/glasspane/">Glasspane</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/accessibility/" aria-current="page">Accessibility</a>
+        </nav>
+      </div>
+      <div class="footer-meta">
+        <p>SeraphDev — AI development, responsible-AI consulting, and accessible technology for small businesses. Columbus, Ohio. &copy; <span id="year">2026</span> SeraphDev.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function(){var b=document.querySelector('.nav-toggle'),l=document.getElementById('nav-links'),q=window.matchMedia('(max-width: 820px)');
+    function a(){l.hidden=q.matches;if(b)b.setAttribute('aria-expanded','false');}a();
+    if(q.addEventListener){q.addEventListener('change',a);}else{window.addEventListener('resize',a);}
+    if(b){b.addEventListener('click',function(){var o=l.hidden;l.hidden=!o;b.setAttribute('aria-expanded',String(o));});
+    l.addEventListener('click',function(e){if(e.target.tagName==='A'&&q.matches){l.hidden=true;b.setAttribute('aria-expanded','false');}});}
+    var y=document.getElementById('year');if(y){y.textContent=new Date().getFullYear();}})();
+  </script>
+</body>
+</html>
